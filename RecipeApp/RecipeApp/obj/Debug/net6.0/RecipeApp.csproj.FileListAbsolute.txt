@@ -1,0 +1,15 @@
+C:\Users\Aron McDonald\source\repos\prog6221-part-1-ST10291606\RecipeApp\RecipeApp\obj\Debug\net6.0\RecipeApp.csproj.AssemblyReference.cache
+C:\Users\Aron McDonald\source\repos\prog6221-part-1-ST10291606\RecipeApp\RecipeApp\obj\Debug\net6.0\RecipeApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aron McDonald\source\repos\prog6221-part-1-ST10291606\RecipeApp\RecipeApp\obj\Debug\net6.0\RecipeApp.AssemblyInfoInputs.cache
+C:\Users\Aron McDonald\source\repos\prog6221-part-1-ST10291606\RecipeApp\RecipeApp\obj\Debug\net6.0\RecipeApp.AssemblyInfo.cs
+C:\Users\Aron McDonald\source\repos\prog6221-part-1-ST10291606\RecipeApp\RecipeApp\obj\Debug\net6.0\RecipeApp.csproj.CoreCompileInputs.cache
+C:\Users\Aron McDonald\source\repos\prog6221-part-1-ST10291606\RecipeApp\RecipeApp\bin\Debug\net6.0\RecipeApp.exe
+C:\Users\Aron McDonald\Source\Repos\prog6221-part-1-ST10291606\RecipeApp\RecipeApp\bin\Debug\net6.0\RecipeApp.deps.json
+C:\Users\Aron McDonald\Source\Repos\prog6221-part-1-ST10291606\RecipeApp\RecipeApp\bin\Debug\net6.0\RecipeApp.runtimeconfig.json
+C:\Users\Aron McDonald\source\repos\prog6221-part-1-ST10291606\RecipeApp\RecipeApp\bin\Debug\net6.0\RecipeApp.dll
+C:\Users\Aron McDonald\source\repos\prog6221-part-1-ST10291606\RecipeApp\RecipeApp\bin\Debug\net6.0\RecipeApp.pdb
+C:\Users\Aron McDonald\source\repos\prog6221-part-1-ST10291606\RecipeApp\RecipeApp\obj\Debug\net6.0\RecipeApp.dll
+C:\Users\Aron McDonald\source\repos\prog6221-part-1-ST10291606\RecipeApp\RecipeApp\obj\Debug\net6.0\refint\RecipeApp.dll
+C:\Users\Aron McDonald\source\repos\prog6221-part-1-ST10291606\RecipeApp\RecipeApp\obj\Debug\net6.0\RecipeApp.pdb
+C:\Users\Aron McDonald\Source\Repos\prog6221-part-1-ST10291606\RecipeApp\RecipeApp\obj\Debug\net6.0\RecipeApp.genruntimeconfig.cache
+C:\Users\Aron McDonald\Source\Repos\prog6221-part-1-ST10291606\RecipeApp\RecipeApp\obj\Debug\net6.0\ref\RecipeApp.dll
