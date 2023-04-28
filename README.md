@@ -37,8 +37,8 @@ NOTE: Make sure you remember where you have extracted the folder to!
 Locate the file/folder you have extracted (RecipeApp) and double click to open it.
 
 **Step 3**
-Within this folder you will see 2 files, 1 folder that is named BudgetApp and 1 file with the .sln extension (named BudgetApp.sln),
-double click (open) the BudgetApp.sln file.
+Within this folder you will see 2 files, 1 folder that is named RecipeApp and 1 file with the .sln extension (named RecipeApp.sln),
+double click (open) the RecipeApp.sln file.
 This will open your visual studio and compile the applications classes and code.
 
 **Step 4**
