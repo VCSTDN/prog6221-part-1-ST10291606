@@ -9,7 +9,7 @@ public class Program
 
     public static void Main(string[] args)
     {
-        Recipe recipe = new Recipe();
+        //Recipe recipe = new Recipe();
 
         Console.BackgroundColor = ConsoleColor.DarkBlue;
         Console.ForegroundColor = ConsoleColor.Green;
@@ -113,7 +113,8 @@ public class Program
 
 
             // If stattmets to determine the users decision and then call the correct method after input is taken
-           
+           // Menu control flow
+
             if (option == "1")
             {
                 Console.WriteLine();
