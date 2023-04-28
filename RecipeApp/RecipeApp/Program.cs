@@ -11,33 +11,34 @@ public class Program
     {
         Recipe recipe = new Recipe();
 
+        // The user should be able to store the details for a single recipe. 
         Console.WriteLine("Welcome to my recipe application");
         Console.WriteLine("*************************************");
 
-        int numofIngredients;
+        int numofIngredients; // Number of ingredients.
 
-        Ingredient ingredient;
+        Ingredient ingredient; // Create an object of the ingredient class.
 
-        Ingredient[] ingredients;
+        Ingredient[] ingredients; // This is the array for all the ingredients.
 
-        int numofSteps;
+        int numofSteps; // Number of steps 
 
-        Step step;
+        Step step; // Create an obkect of the step class 
 
-        Step[] steps;
+        Step[] steps; // This is the array for all steps
 
         Console.WriteLine("Enter the number of Ingredients");
         numofIngredients = Convert.ToInt32(Console.ReadLine());
 
-        ingredients = new Ingredient[numofIngredients];
+        ingredients = new Ingredient[numofIngredients]; // Initializing the declared array of ingredients with a size according to the number of ingredients the user enters
 
-        int count = 0;
+        int count = 0; // Counts the number of times the loop has been run through 
 
-        while (count < numofIngredients)
+        while (count < numofIngredients) // While loop to recieve user input for name, quantity and unit of measurement for each ingredient
         {
-            ingredient = new Ingredient();
+            ingredient = new Ingredient(); // Each loop will create a new object
 
-            Console.WriteLine("For Ingredient " + (count + 1) + ": ");
+            Console.WriteLine("For Ingredient " + (count + 1) + ": "); // User enters deatils for nect ingredient
 
             Console.WriteLine("Enter the name: ");
             ingredient.name = Console.ReadLine();
@@ -48,45 +49,43 @@ public class Program
             Console.WriteLine("Enter the unit of measurement: ");
             ingredient.unitofMeasurement = Console.ReadLine();
 
-            for (int i = count; i < numofIngredients; i++)
+            for (int i = count; i < numofIngredients; i++) // Stores the user input into the array
             {
                 ingredients[i] = ingredient;
             }
 
-            count++;
+            count++; // Incerases the value of the count by 1
 
+            // The loop will now return to its start and repeat itself for the next ingredient 
         }
-
-
-
 
 
         Console.WriteLine("Enter the number of steps: ");
         numofSteps = Convert.ToInt32(Console.ReadLine());
 
-        steps = new Step[numofSteps];
+        steps = new Step[numofSteps]; // Initializing the declared array of steps with a size according to the number of steps to the recipe
 
-        int count2 = 0;
+        int count2 = 0; // Counts the number of times the loop has been run through 
 
-        while (count2 < numofSteps)
+        while (count2 < numofSteps) // While loop to recieve users description for each step
         {
-            step = new Step();
+            step = new Step(); // Each loop creates a new object 
 
             Console.WriteLine("For step " + (count2 + 1) + ": ");
 
             Console.WriteLine("Enter the description for this step: ");
             step.description = Console.ReadLine();
 
-            for (int j = count2; j < numofSteps; j++)
+            for (int j = count2; j < numofSteps; j++) // Stores the user input into the array
             {
                 steps[j] = step;
             }
 
-            count2++;
+            count2++; 
 
         }
 
-        void SaveOriginalQuantities()
+        void SaveOriginalQuantities() // method created to store all the original quantities 
         {
             originalQuantities = new double[ingredients.Length];
             for (int i = 0; i < ingredients.Length; i++)
