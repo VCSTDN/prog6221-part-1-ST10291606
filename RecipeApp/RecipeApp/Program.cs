@@ -9,12 +9,14 @@ public class Program
 
     public static void Main(string[] args)
     {
-        //Recipe recipe = new Recipe();
+        
 
         Console.BackgroundColor = ConsoleColor.DarkBlue;
         Console.ForegroundColor = ConsoleColor.Green;
 
-        // The user should be able to store the details for a single recipe. 
+        // The user should be able to store the details for a single recipe.
+
+        Console.WriteLine("*************************************");
         Console.WriteLine("Welcome to my recipe application");
         Console.WriteLine("*************************************");
 
@@ -30,7 +32,7 @@ public class Program
 
         Step[] steps; // This is the array for all steps
 
-        Console.WriteLine("Enter the number of Ingredients");
+        Console.WriteLine("\nEnter the number of Ingredients:");
         numofIngredients = Convert.ToInt32(Console.ReadLine());
 
         ingredients = new Ingredient[numofIngredients]; // Initializing the declared array of ingredients with a size according to the number of ingredients the user enters
@@ -41,7 +43,7 @@ public class Program
         {
             ingredient = new Ingredient(); // Each loop will create a new object
 
-            Console.WriteLine("For Ingredient " + (count + 1) + ": "); // User enters deatils for nect ingredient
+            Console.WriteLine("\nFor Ingredient " + (count + 1) + ": \n"); // User enters deatils for nect ingredient
 
             Console.WriteLine("Enter the name: ");
             ingredient.name = Console.ReadLine();
@@ -63,7 +65,7 @@ public class Program
         }
 
 
-        Console.WriteLine("Enter the number of steps: ");
+        Console.WriteLine("\nEnter the number of steps: ");
         numofSteps = Convert.ToInt32(Console.ReadLine());
 
         steps = new Step[numofSteps]; // Initializing the declared array of steps with a size according to the number of steps to the recipe
@@ -74,7 +76,7 @@ public class Program
         {
             step = new Step(); // Each loop creates a new object 
 
-            Console.WriteLine("For step " + (count2 + 1) + ": ");
+            Console.WriteLine("\nFor step " + (count2 + 1) + ": ");
 
             Console.WriteLine("Enter the description for this step: ");
             step.description = Console.ReadLine();
@@ -102,12 +104,13 @@ public class Program
 
         while (true) // While loop to display options to the user 
         {
-            Console.WriteLine("\nChoose an option:");
-            Console.WriteLine("1. Display recipe");
-            Console.WriteLine("2. Scale recipe");
-            Console.WriteLine("3. Reset quantities");
-            Console.WriteLine("4. Clear recipe");
-            Console.WriteLine("5. Exit");
+            Console.WriteLine("\nChoose an option number:");
+            Console.WriteLine("(1) = Display recipe");
+            Console.WriteLine("(2) = Scale recipe");
+            Console.WriteLine("(3) = Reset quantities");
+            Console.WriteLine("(4) = Clear recipe");
+            Console.WriteLine("(5) = Exit the application");
+            
 
             string option = Console.ReadLine(); // Recieves user input 
 
@@ -186,7 +189,7 @@ public class Program
                 Console.WriteLine();
                 Console.BackgroundColor = ConsoleColor.Yellow;
                 Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine("Here are the ingredients stored in the application: ");
+                Console.WriteLine("Here are the ingredients needed for your recipe: \n");
 
                 foreach (var ingred in ingredients) // for each loop to display each attribute of the ingredients
                 {
@@ -194,11 +197,11 @@ public class Program
                 }
 
                 Console.WriteLine();
-                Console.WriteLine("Here is a description of the steps in the recipe: ");
+                Console.WriteLine("Here is a description of the steps in the recipe: \n");
 
                 foreach (var stepa in steps) // for each loop to display all the steps stores in steps 
                 {
-                    Console.WriteLine("Description: " + stepa.description);
+                    Console.WriteLine("Step Description: " + stepa.description + "\n");
                 }
 
             }
