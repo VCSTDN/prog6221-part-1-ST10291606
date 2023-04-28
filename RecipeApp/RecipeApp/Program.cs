@@ -14,6 +14,8 @@ public class Program
         Console.BackgroundColor = ConsoleColor.DarkBlue;
         Console.ForegroundColor = ConsoleColor.Green;
 
+        repeat:
+
         // The user should be able to store the details for a single recipe.
 
         Console.WriteLine("*************************************");
@@ -110,6 +112,7 @@ public class Program
             Console.WriteLine("(3) = Reset quantities");
             Console.WriteLine("(4) = Clear recipe");
             Console.WriteLine("(5) = Exit the application");
+            Console.WriteLine("(6) = Restart the application with a new recipe");
             
 
             string option = Console.ReadLine(); // Recieves user input 
@@ -173,6 +176,11 @@ public class Program
             {
                 break;
 
+            }
+
+            else if (option == "6")
+            {
+                goto repeat;
             }
 
             else
