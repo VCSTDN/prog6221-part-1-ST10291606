@@ -2,9 +2,7 @@
 
 # RecipeApp README
 
-/***************************************************************************************************
-                       /Aron's Recipe menu/                                                        
-***************************************************************************************************/
+## Aron's Recipe Application
 
 Minimum Requirements 
 
@@ -67,7 +65,15 @@ Available at: https://www.w3schools.blog/how-to-change-the-color-of-your-text-in
 
 w3schools.com, 2023. w3schools.com. [Online] 
 Available at: https://www.w3schools.com/cs/default.asp
-[Accessed 28 April 2021].
+[Accessed 28 April 2023].
+
+programiz.com, 2023. programiz.com. [Online]
+Available at: https://www.programiz.com/csharp-programming/goto
+[Accessed 28 April 2023].
+
+learn.microsoft.com, 2023. learn.microsoft.com. [Online]
+Available at: https://learn.microsoft.com/en-us/dotnet/api/system.text.regularexpressions.regex?view=net-8.0
+[Accessed 28 April 2023].
 
 
 ## License & Copyright
