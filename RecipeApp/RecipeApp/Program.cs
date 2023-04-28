@@ -11,6 +11,9 @@ public class Program
     {
         Recipe recipe = new Recipe();
 
+        Console.BackgroundColor = ConsoleColor.DarkBlue;
+        Console.ForegroundColor = ConsoleColor.Green;
+
         // The user should be able to store the details for a single recipe. 
         Console.WriteLine("Welcome to my recipe application");
         Console.WriteLine("*************************************");
@@ -97,7 +100,7 @@ public class Program
         SaveOriginalQuantities();
 
 
-        while (true)
+        while (true) // While loop to display options to the user 
         {
             Console.WriteLine("\nChoose an option:");
             Console.WriteLine("1. Display recipe");
@@ -106,8 +109,11 @@ public class Program
             Console.WriteLine("4. Clear recipe");
             Console.WriteLine("5. Exit");
 
-            string option = Console.ReadLine();
+            string option = Console.ReadLine(); // Recieves user input 
 
+
+            // If stattmets to determine the users decision and then call the correct method after input is taken
+           
             if (option == "1")
             {
                 Console.WriteLine();
@@ -137,10 +143,25 @@ public class Program
 
             else if (option == "4")
             {
-                ClearRecipe();
-                Console.WriteLine("\nThe recipe has been cleared.");
+                Console.WriteLine("Are you sure you want to clear your recipe? ");
+                Console.WriteLine("Select Y for yes or N for no: ");
 
-                DisplayRecipe();
+                string clearDecision = Console.ReadLine();
+                if (clearDecision == "Y") 
+                {
+                    ClearRecipe();
+                    Console.WriteLine("\nThe recipe has been cleared.");
+
+                    DisplayRecipe();
+
+                }
+
+                else if (clearDecision == "N") 
+                { 
+                    DisplayRecipe();
+                }
+
+                
 
             }
 
@@ -159,12 +180,14 @@ public class Program
 
 
 
-            void DisplayRecipe()
+            void DisplayRecipe() // Method to display the recipe
             {
                 Console.WriteLine();
+                Console.BackgroundColor = ConsoleColor.Yellow;
+                Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Here are the ingredients stored in the application: ");
 
-                foreach (var ingred in ingredients)
+                foreach (var ingred in ingredients) // for each loop to display each attribute of the ingredients
                 {
                     Console.WriteLine("Name: " + ingred.name + "\n" + "Quantity: " + ingred.quantity + "\n" + "Unit of measurement: " + ingred.unitofMeasurement);
                 }
@@ -172,14 +195,14 @@ public class Program
                 Console.WriteLine();
                 Console.WriteLine("Here is a description of the steps in the recipe: ");
 
-                foreach (var stepa in steps)
+                foreach (var stepa in steps) // for each loop to display all the steps stores in steps 
                 {
                     Console.WriteLine("Description: " + stepa.description);
                 }
 
             }
 
-            void ScaleRecipe(double factor)
+            void ScaleRecipe(double factor) // Method to scale the ingredient quantities by the given factor
             {
                 for (int i = 0; i < ingredients.Length; i++)
                 {
@@ -188,7 +211,7 @@ public class Program
                 }
             }
 
-            void ResetQuantities()
+            void ResetQuantities() // Reset the ingredient quantities to their original values
             {
 
                 for (int i = 0; i < ingredients.Length; i++)
@@ -197,7 +220,7 @@ public class Program
                 }
             }
 
-            void ClearRecipe()
+            void ClearRecipe() // Clear the ingredients and steps arrays
             {
 
                 ingredients = new Ingredient[0];
