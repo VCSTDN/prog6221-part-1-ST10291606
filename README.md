@@ -8,16 +8,20 @@ Minimum Requirements
 
 Operating system
 
-Windows 8.1, 10, or 11
+Windows 11 version 21H2 or higher
+Windows 10 version 1909 or higher
 
 These are the minimum hardware requirements to run Visual Studio 2022
 
-You need a 1.8 GHz or faster processor.
-A Quad-core processor or better
-Minimum 2 GB of RAM. But 8GB of RAM recommended (12.5 if you are running on a Virtual PC)
-Minimum 800MB of space for basic installation. Complete installation takes around 210 GB of Hard disk space. 
-For HDD Speed &  Performance, Install Visual Studio 2022 & Windows OS on SSD Drive
-The minimum display resolution of 720p (1280 by 720). Display resolution of WXGA (1366 by 768) or higher is recommended.
+ARM64 or x64 processor; Quad-core or better recommended. ARM 32 processors are not supported.
+Minimum of 4 GB of RAM. Many factors impact resources used; we recommend 16 GB RAM for typical professional solutions.
+Windows 365: Minimum 2 vCPU and 8 GB RAM. 4 vCPU and 16 GB of RAM recommended.
+Hard disk space: Minimum of 850 MB up to 210 GB of available space, 
+depending on features installed; typical installations require 20-50 GB of free space. 
+We recommend installing Windows and Visual Studio on a solid-state drive (SSD) to increase performance.
+Video card that supports a minimum display resolution of WXGA (1366 by 768); 
+Visual Studio will work best at a resolution of 1920 by 1080 or higher.
+
 
 **Version 1**
 

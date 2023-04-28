@@ -6,16 +6,16 @@ using System.Text.RegularExpressions;
 
 public class Program
 {
-    private static double[] originalQuantities;
+    private static double[] originalQuantities; // 
     
 
     public static void Main(string[] args)
     {
 
-        Console.BackgroundColor = ConsoleColor.DarkBlue; // Changes the colour of the text background in the application
-        Console.ForegroundColor = ConsoleColor.Green; // Changes the colour of the text presented to the user
+        Console.BackgroundColor = ConsoleColor.DarkBlue; // Changes the colour of the text background in the application (w3schools.com)
+        Console.ForegroundColor = ConsoleColor.Green; // Changes the colour of the text presented to the user (w3schools.com)
 
-        repeat:
+        repeat: // label needed for the goto statement to operate correctly. The application restarts from this point when the goto statement is read. (programiz.com)
 
         // The user should be able to store the details for a single recipe.
 
@@ -173,13 +173,13 @@ public class Program
 
             else if (option == "5")
             {
-                break;
+                break; // Ends the application
 
             }
 
             else if (option == "6")
             {
-                goto repeat;
+                goto repeat; // goto statement which will return the application to where the label for the goto statement is placed. (programiz.com)
             }
 
             else
@@ -192,7 +192,7 @@ public class Program
             {
                 Console.WriteLine();
 
-                //Changes the text colours once more 
+                //Changes the text colours once more (w3schools.com)
                 Console.BackgroundColor = ConsoleColor.Yellow; 
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Here are the ingredients needed for your recipe: \n");
