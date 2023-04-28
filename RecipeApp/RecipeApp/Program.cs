@@ -6,14 +6,14 @@ using System.Text.RegularExpressions;
 
 public class Program
 {
-    private static double[] originalQuantities; // 
+    private static double[] originalQuantities; // Empty array to store the original quantities
     
 
     public static void Main(string[] args)
     {
 
         Console.BackgroundColor = ConsoleColor.DarkBlue; // Changes the colour of the text background in the application (w3schools.com)
-        Console.ForegroundColor = ConsoleColor.Green; // Changes the colour of the text presented to the user (w3schools.com)
+        Console.ForegroundColor = ConsoleColor.Black; // Changes the colour of the text presented to the user (w3schools.com)
 
         repeat: // label needed for the goto statement to operate correctly. The application restarts from this point when the goto statement is read. (programiz.com)
 
@@ -79,7 +79,7 @@ public class Program
         {
             step = new Step(); // Each loop creates a new object 
 
-            Console.WriteLine("\nFor step " + (count2 + 1) + ": ");
+            Console.WriteLine("\nFor step " + (count2 + 1) + ": \n");
 
             Console.WriteLine("Enter the description for this step: ");
             step.description = Console.ReadLine();
@@ -174,7 +174,6 @@ public class Program
             else if (option == "5")
             {
                 break; // Ends the application
-
             }
 
             else if (option == "6")
@@ -240,13 +239,8 @@ public class Program
                 steps = new Step[0];
             }
 
-           
-
         }
-
-
-
-
+        
     }
 
 }
