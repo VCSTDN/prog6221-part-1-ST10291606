@@ -2,17 +2,18 @@
 using RecipeApp;
 using System;
 using System.Transactions;
+using System.Text.RegularExpressions;
 
 public class Program
 {
     private static double[] originalQuantities;
+    
 
     public static void Main(string[] args)
     {
-        
 
-        Console.BackgroundColor = ConsoleColor.DarkBlue;
-        Console.ForegroundColor = ConsoleColor.Green;
+        Console.BackgroundColor = ConsoleColor.DarkBlue; // Changes the colour of the text background in the application
+        Console.ForegroundColor = ConsoleColor.Green; // Changes the colour of the text presented to the user
 
         repeat:
 
@@ -168,8 +169,6 @@ public class Program
                     DisplayRecipe();
                 }
 
-                
-
             }
 
             else if (option == "5")
@@ -189,13 +188,12 @@ public class Program
             }
 
 
-
-
-
             void DisplayRecipe() // Method to display the recipe
             {
                 Console.WriteLine();
-                Console.BackgroundColor = ConsoleColor.Yellow;
+
+                //Changes the text colours once more 
+                Console.BackgroundColor = ConsoleColor.Yellow; 
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Here are the ingredients needed for your recipe: \n");
 
@@ -238,6 +236,8 @@ public class Program
                 ingredients = new Ingredient[0];
                 steps = new Step[0];
             }
+
+           
 
         }
 
