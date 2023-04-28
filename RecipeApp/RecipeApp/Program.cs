@@ -199,15 +199,18 @@ public class Program
 
                 foreach (var ingred in ingredients) // for each loop to display each attribute of the ingredients
                 {
-                    Console.WriteLine("Name: " + ingred.name + "\n" + "Quantity: " + ingred.quantity + "\n" + "Unit of measurement: " + ingred.unitofMeasurement);
+                    Console.WriteLine("Name: " + ingred.name + "\n" + "Quantity: " + ingred.quantity + "\n" + "Unit of measurement: " + ingred.unitofMeasurement + "\n");
                 }
 
                 Console.WriteLine();
                 Console.WriteLine("Here is a description of the steps in the recipe: \n");
 
+                int stepNumber = 1; // added a counter to display the step number in the following foreach loop
+
                 foreach (var stepa in steps) // for each loop to display all the steps stores in steps 
                 {
-                    Console.WriteLine("Step Description: " + stepa.description + "\n");
+                    Console.WriteLine("Step " + stepNumber + " Description: " + stepa.description + "\n");
+                    stepNumber++;
                 }
 
             }
