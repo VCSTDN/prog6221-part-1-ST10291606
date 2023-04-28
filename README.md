@@ -30,7 +30,7 @@ This application serves as a solution to the Portfolio of Evidence Task 1 given 
 ## How to Compile and Run the application
 
 **Step 1**
-Extract the zipped app folder (Recipe.zip file) to your desired location.
+Extract the zipped app folder (RecipeApp.zip file) to your desired location.
 NOTE: Make sure you remember where you have extracted the folder to!
 
 **Step 2**
